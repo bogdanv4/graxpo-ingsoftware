@@ -2,7 +2,7 @@
   --orange: #e84c3d;
   --bgLightGrey: #f3f3f3;
   --bgDarkGrey: #ececec;
-  --textWhite: ;
+  --textWhite: #fff;
   --textGrey: #81868e;
 }
 
@@ -141,7 +141,9 @@ h6 {
 .three-simple-steps,
 .featured-work,
 .service,
-.portfolio {
+.portfolio,
+.crew,
+.blog {
   padding: 100px 0;
   background-color: var(--bgLightGrey);
 }
@@ -615,6 +617,221 @@ h6 {
     font-size: 12px;
     line-height: 2;
     margin-top: 30px;
+  }
+}
+
+/* Crew */
+
+.crew {
+  background-color: var(--bgDarkGrey);
+
+  .card {
+    background: transparent;
+    border: 0;
+    color: #333b46;
+
+    .card-img {
+      position: relative;
+
+      img {
+        border-radius: 0;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 50%;
+        background-color: var(--orange);
+        width: 100%;
+
+        transition: 0.3s;
+        transform: scale(0);
+      }
+
+      &:hover .overlay {
+        transform: scale(1);
+      }
+
+      .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+
+        p {
+          color: var(--textWhite);
+          font-weight: 200;
+        }
+        .icon-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          .overlay-content-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            margin: 0 10px;
+            a {
+              font-size: 16px;
+              text-decoration: none;
+              i {
+                color: #fff;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    h5 {
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+/* Testimonilas */
+.testimonials {
+  background-image: url("../img/testimonialsBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+
+  .testimonials-title {
+    h2 {
+      color: var(--textWhite);
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 3px;
+
+      &::before {
+        border-color: #fff;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: 4px;
+      margin-top: 40px;
+    }
+  }
+
+  .slideshow-container {
+    position: relative;
+    background: transparent;
+  }
+
+  .mySlides {
+    display: none;
+    /* padding: 80px; */
+    text-align: center;
+  }
+
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: var(--orange);
+  }
+
+  p {
+    font-size: 16px;
+    font-style: italic;
+    color: #e3e3e3;
+    margin: 30px 0;
+  }
+
+  .author {
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+
+/* Blog */
+.blog {
+  .blog-single {
+    padding: 0;
+    margin: 0 20px;
+    overflow: hidden;
+    display: flex;
+
+    .left {
+      width: 50%;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .right {
+      width: 50%;
+      background-color: var(--orange);
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: -20px;
+          width: 40px;
+          height: 2px;
+          border: 1px solid #fff;
+        }
+      }
+      p {
+        margin-top: 40px;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
 
