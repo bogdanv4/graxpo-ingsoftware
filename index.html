@@ -26,39 +26,52 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-md">
         <div class="container">
           <a class="navbar-brand logo" href="#"> Graxpo </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <!-- Links -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <section class="hero">
+      <div class="hero-img-wrapper">
+        <img src="./img/under.png" alt="Hero img 1" />
+        <img src="./img/above.png" alt="Hero img 2" />
+      </div>
       <div class="container-fluid">
-        <!-- <img class="hero-img" src="./img/above2.png" alt="" /> -->
         <div class="hero-title">
           <h1>HELLO, WE’RE PROTHEMERS</h1>
           <p>FRESH PREMIMIUM QUALITY PSD TEMPLATE</p>
@@ -73,7 +86,7 @@
     <section class="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <div class="about-text">
               <h2>ABOUT GRAXPO</h2>
               <p>
@@ -89,7 +102,7 @@
               <button class="btn about-btn">LEARN MORE !</button>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <div class="about-img">
               <img src="./img/about.png" alt="" />
             </div>
@@ -194,28 +207,28 @@
     <section class="container-fluid numbers text-light text-center">
       <div class="container">
         <div class="row">
-          <div class="col-3 numbers-single">
+          <div class="col-lg-3 col-md-6 numbers-single">
             <div class="icon-and-number">
               <i class="bi bi-hand-thumbs-up"></i>
               <p>1580</p>
             </div>
             <h2>PROJECT COMPLETED</h2>
           </div>
-          <div class="col-3 numbers-single">
+          <div class="col-lg-3 col-md-6 numbers-single">
             <div class="icon-and-number">
               <i class="bi bi-heart"></i>
               <p>2850</p>
             </div>
             <h2>PEOPLE LOVED</h2>
           </div>
-          <div class="col-3 numbers-single">
+          <div class="col-lg-3 col-md-6 numbers-single">
             <div class="icon-and-number">
               <i class="bi bi-star"></i>
               <p>1500</p>
             </div>
             <h2>IDENTIFY EARNED</h2>
           </div>
-          <div class="col-3 numbers-single">
+          <div class="col-lg-3 col-md-6 numbers-single">
             <div class="icon-and-number">
               <i class="bi bi-vinyl"></i>
               <p>1430</p>
@@ -239,7 +252,7 @@
         <div class="three-simple-steps-wrapper text-center">
           <div class="container">
             <div class="row">
-              <div class="col-4 three-simple-steps-single">
+              <div class="col-md-4 col-sm-12 three-simple-steps-single">
                 <div class="three-simple-steps-icon">
                   <i class="bi bi-phone"></i>
                 </div>
@@ -251,7 +264,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-4 three-simple-steps-single">
+              <div class="col-md-4 col-sm-12 three-simple-steps-single">
                 <div class="three-simple-steps-icon">
                   <i class="bi bi-bar-chart"></i>
                 </div>
@@ -263,7 +276,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-4 three-simple-steps-single">
+              <div class="col-md-4 col-sm-12 three-simple-steps-single">
                 <div class="three-simple-steps-icon">
                   <i class="bi bi-shuffle"></i>
                 </div>
@@ -294,19 +307,19 @@
       </div>
       <div class="container-fluid featured-work-wrapper text-center">
         <div class="row">
-          <div class="col-4 featured-work-single">
+          <div class="col-md-4 col-sm-12 featured-work-single">
             <img src="./img/featured3.png" class="img-fluid" alt="" />
             <div class="overlay">
               <a href="#">VIEW DETAIL</a>
             </div>
           </div>
-          <div class="col-4 featured-work-single">
+          <div class="col-md-4 col-sm-12 featured-work-single">
             <img src="./img/featured2.png" class="img-fluid" alt="" />
             <div class="overlay">
               <a href="#">VIEW DETAIL</a>
             </div>
           </div>
-          <div class="col-4 featured-work-single">
+          <div class="col-md-4 col-sm-12 featured-work-single">
             <img src="./img/featured1.png" class="img-fluid" alt="" />
             <div class="overlay">
               <a href="#">VIEW DETAIL</a>
@@ -330,12 +343,12 @@
       <div class="container-fluid service-wrapper text-light">
         <div class="service-single">
           <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
               <div class="service-single-image">
                 <img src="./img/service.png" class="img-fluid" alt="" />
               </div>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
               <div class="service-single-text">
                 <h2>AWESOME TITLE HERE</h2>
                 <p>
@@ -350,7 +363,7 @@
         </div>
         <div class="service-single">
           <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
               <div class="service-single-text left-padding">
                 <h2>AWESOME TITLE HERE</h2>
                 <p>
@@ -361,7 +374,7 @@
                 </p>
               </div>
             </div>
-            <div class="col image-right">
+            <div class="col-md-6 col-sm-12 image-right">
               <div class="service-single-image">
                 <img src="./img/service.png" class="img-fluid" alt="" />
               </div>
@@ -371,12 +384,12 @@
 
         <div class="service-single">
           <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
               <div class="service-single-image">
                 <img src="./img/service.png" class="img-fluid" alt="" />
               </div>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
               <div class="service-single-text">
                 <h2>AWESOME TITLE HERE</h2>
                 <p>
@@ -545,7 +558,7 @@
     <section class="subscribe text-light">
       <div class="container">
         <div class="row">
-          <div class="col subscribe-single">
+          <div class="col-lg-6 col-md-12 subscribe-single">
             <div class="subscribe-text">
               <h2>SUBSCRIBE TO UPDATE</h2>
               <p>
@@ -557,7 +570,7 @@
               </p>
             </div>
           </div>
-          <div class="col subscribe-single">
+          <div class="col-lg-6 col-md-12 subscribe-single">
             <form action="">
               <input type="email" placeholder="Enter email address" />
               <input type="submit" value="SUBSCRIBE" />
@@ -578,7 +591,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col card">
+          <div class="col-lg-3 col-md-6 col-sm-12 card">
             <div class="card-img">
               <img
                 src="./img/ibanHasan.png"
@@ -612,7 +625,7 @@
               <p class="card-text text-center">CEO</p>
             </div>
           </div>
-          <div class="col card">
+          <div class="col-lg-3 col-md-6 col-sm-12 card">
             <div class="card-img">
               <img src="./img/radRedwan.png" class="card-img-top" alt="..." />
               <div class="overlay">
@@ -642,7 +655,7 @@
               <p class="card-text text-center">LEAD OF DESIGN</p>
             </div>
           </div>
-          <div class="col card">
+          <div class="col-lg-3 col-md-6 col-sm-12 card">
             <div class="card-img">
               <img
                 src="./img/bariOwalarMeye.png"
@@ -676,7 +689,7 @@
               <p class="card-text text-center">DEV</p>
             </div>
           </div>
-          <div class="col card">
+          <div class="col-lg-3 col-md-6 col-sm-12 card">
             <div class="card-img">
               <img src="./img/tofailAhmed.png" class="card-img-top" alt="..." />
               <div class="overlay">
@@ -711,53 +724,74 @@
     </section>
 
     <section class="container-fluid testimonials">
-      <div class="container">
-        <div class="what-we-do-title testimonials-title">
-          <h2>TESTIMONIALS</h2>
-          <p>WHAT OUR CLIENTS SAY</p>
-        </div>
-      </div>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Full-width slides/quotes -->
-        <div class="mySlides">
-          <img src="./img/testimonialPic.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum?
-            Adipisci consectetur inventore sunt eligendi, <br />
-            dolorum quod iure sit voluptas possimus laboriosam nulla, et
-            perferendis!
-          </p>
-          <h2 class="author">RAF REDWAN</h2>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="container">
+          <div class="what-we-do-title testimonials-title">
+            <h2>TESTIMONIALS</h2>
+            <p>WHAT OUR CLIENTS SAY</p>
+          </div>
         </div>
 
-        <div class="mySlides">
-          <img src="./img/testimonialPic2.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum?
-            Adipisci consectetur inventore sunt eligendi, <br />
-            dolorum quod iure sit voluptas possimus laboriosam nulla, et
-            perferendis!
-          </p>
-          <h2 class="author">TOFAIL AHMED</h2>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/testimonialPic.png" class="" alt="..." />
+            <div class="carousel-caption text-dark">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                cum? Adipisci consectetur inventore sunt eligendi, <br />
+                dolorum quod iure sit voluptas possimus laboriosam nulla, et
+                perferendis!
+              </p>
+              <h2 class="author">RAF REDWAN</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/testimonialPic2.png" class="" alt="..." />
+            <div class="carousel-caption text-dark">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                cum? Adipisci consectetur inventore sunt eligendi, <br />
+                dolorum quod iure sit voluptas possimus laboriosam nulla, et
+                perferendis!
+              </p>
+              <h2 class="author">TOFAIL AHMED</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/testimonialPic3.png" class="" alt="..." />
+            <div class="carousel-caption text-dark">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                cum? Adipisci consectetur inventore sunt eligendi, <br />
+                dolorum quod iure sit voluptas possimus laboriosam nulla, et
+                perferendis!
+              </p>
+              <h2 class="author">BARI OWALAR MEYE</h2>
+            </div>
+          </div>
         </div>
-
-        <div class="mySlides">
-          <img src="./img/testimonialPic3.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum?
-            Adipisci consectetur inventore sunt eligendi, <br />
-            dolorum quod iure sit voluptas possimus laboriosam nulla, et
-            perferendis!
-          </p>
-          <h2 class="author">BARI OWALAR MEYE</h2>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-      </div>
-      <!-- Dots/bullets/indicators -->
-      <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </section>
 
@@ -772,7 +806,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col blog-single">
+          <div class="col-lg-5 col-md-12 blog-single">
             <div class="left">
               <img src="./img/blog2.png" alt="" />
             </div>
@@ -787,7 +821,7 @@
               </p>
             </div>
           </div>
-          <div class="col blog-single">
+          <div class="col-lg-5 col-md-12 blog-single">
             <div class="left">
               <img src="./img/blog1.png" alt="" />
             </div>
@@ -817,7 +851,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col pricing-single">
+          <div class="col-lg-3 col-md-10 pricing-single">
             <ul class="price">
               <li class="header">Basic</li>
               <li>60 users</li>
@@ -830,7 +864,7 @@
               <li><a href="#" class="price-btn">Sign Up</a></li>
             </ul>
           </div>
-          <div class="col pricing-single">
+          <div class="col-lg-3 col-md-10 pricing-single">
             <ul class="price">
               <li class="header">Basic</li>
               <li>60 users</li>
@@ -843,7 +877,7 @@
               <li><a href="#" class="price-btn">Sign Up</a></li>
             </ul>
           </div>
-          <div class="col pricing-single">
+          <div class="col-lg-3 col-md-10 pricing-single">
             <ul class="price">
               <li class="header">Basic</li>
               <li>60 users</li>
@@ -871,7 +905,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col get-in-touch-single">
+          <div class="col-lg-6 col-md-12 get-in-touch-single">
             <form action="">
               <div class="row">
                 <div class="col">
@@ -901,7 +935,7 @@
               </div>
             </form>
           </div>
-          <div class="col get-in-touch-single">
+          <div class="col-lg-5 col-md-12 get-in-touch-single">
             <ul>
               <li>
                 <div>
