@@ -113,7 +113,8 @@ h6 {
 }
 
 .about-text h2,
-.what-we-do-title h2 {
+.what-we-do-title h2,
+.section-title h2 {
   font-size: 20px;
   letter-spacing: 2px;
   position: relative;
@@ -129,7 +130,8 @@ h6 {
 }
 
 .about-text p,
-.what-we-do-title p {
+.what-we-do-title p,
+.section-title p {
   font-size: 14px;
   color: var(--textGrey);
   margin: 40px 0;
@@ -161,11 +163,13 @@ h6 {
   background-color: var(--bgLightGrey);
 }
 
-.what-we-do-title {
+.what-we-do-title,
+.section-title {
   text-align: center;
 }
 
-.what-we-do-title h2::before {
+.what-we-do-title h2::before,
+.section-title h2::before {
   position: absolute;
   content: "";
   width: 40px;
@@ -517,21 +521,17 @@ h6 {
 }
 .portfolio-single1 {
   grid-column: span 2;
-  /* background-color: red; */
 }
 .portfolio-single2 {
   grid-column: span 2;
   grid-row: span 2;
-  /* background-color: green; */
 }
 .portfolio-single3 {
   grid-column: span 2;
-  /* background-color: blue; */
 }
 .portfolio-single4 {
   grid-column: span 2;
   grid-row: span 2;
-  /* background-color: purple; */
 }
 .portfolio-single5 {
   background-color: rgb(108, 78, 52);
@@ -541,29 +541,23 @@ h6 {
 }
 .portfolio-single7 {
   grid-column: span 2;
-  /* background-color: black; */
 }
 .portfolio-single8 {
   grid-column: span 2;
-  /* background-color: pink; */
 }
 .portfolio-single9 {
   grid-column: span 2;
-  /* background-color: violet; */
 }
 .portfolio-single10 {
   grid-column: span 2;
   grid-row: span 2;
-  /* background-color: yellow; */
 }
 .portfolio-single11 {
   grid-column: span 2;
   grid-row: span 2;
-  /* background-color: orange; */
 }
 .portfolio-single12 {
   grid-column: span 2;
-  /* background-color: rgb(0, 106, 255); */
 }
 
 .portfolio-menu {
@@ -1092,6 +1086,27 @@ footer {
       }
     }
   }
+
+  .portfolio {
+    .container-fluid {
+      .grid {
+        .portfolio-single {
+          .overlay {
+            .overlay-content {
+              h2 {
+                font-size: 16px;
+                letter-spacing: 1px;
+              }
+              p {
+                font-size: 12px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* SM -> phone */
@@ -1119,5 +1134,37 @@ footer {
 
   .pricing-single {
     max-width: 80%;
+  }
+
+  .portfolio {
+    .container-fluid {
+      .grid {
+        .portfolio-single {
+          .overlay {
+            .overlay-content {
+              h2 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1;
+              }
+              p {
+                font-size: 10px;
+                line-height: 1;
+              }
+            }
+          }
+
+          &:nth-child(5),
+          &:nth-child(6) {
+            .overlay {
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
