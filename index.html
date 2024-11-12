@@ -596,9 +596,38 @@
           </div>
           <div class="col-lg-6 col-md-12 subscribe-single">
             <form action="">
-              <input type="email" placeholder="Enter email address" />
-              <input type="submit" value="SUBSCRIBE" />
+              <input
+                id="subscribe-email"
+                type="email"
+                placeholder="Enter email address"
+              />
+              <input id="subscribe-submit" type="submit" value="SUBSCRIBE" />
             </form>
+          </div>
+        </div>
+      </div>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="subscribe-toast"
+          class="toast bg-danger text-light"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <strong id="subscribe-toast-title" class="me-auto"
+              >Bootstrap</strong
+            >
+            <small>now</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="subscribe-toast-body" class="toast-body">
+            Hello, world! This is a toast message.
           </div>
         </div>
       </div>
@@ -956,6 +985,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    id="get-in-touch-name"
                     placeholder="Your Name"
                   />
                 </div>
@@ -963,6 +993,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    id="get-in-touch-email"
                     placeholder="Email Address"
                   />
                 </div>
@@ -970,12 +1001,18 @@
               <div class="form-textarea">
                 <textarea
                   class="form-control"
+                  id="get-in-touch-message"
                   placeholder="Message"
                   rows="10"
                 ></textarea>
               </div>
               <div class="form-submit">
-                <button class="btn about-btn submit-btn">SUBMIT NOW</button>
+                <button
+                  id="get-in-touch-submit"
+                  class="btn about-btn submit-btn"
+                >
+                  SUBMIT NOW
+                </button>
               </div>
             </form>
           </div>
@@ -1004,6 +1041,31 @@
                 <p>+8805-5823-582</p>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="get-in-touch-toast"
+          class="toast bg-danger text-light"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <strong id="get-in-touch-toast-title" class="me-auto"
+              >Bootstrap</strong
+            >
+            <small>now</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="get-in-touch-toast-body" class="toast-body">
+            Hello, world! This is a toast message.
           </div>
         </div>
       </div>
